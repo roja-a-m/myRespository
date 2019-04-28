@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'font-awesome/css/font-awesome.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
+.col-icon {
+    width: 40px;
+}
+.hyperlink:hover{
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+        cursor: pointer;
+}
+mat-checkbox{
+    padding-left: 16px;
+}
+
+
+.login_bg{
+    /* background: #007dc3 url(/assets/images/bg.png) no-repeat center top; */
+    background-color: #d8d8d8
+
+}

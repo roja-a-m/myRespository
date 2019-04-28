@@ -1,0 +1,83 @@
+.left-icon:before {
+    padding: 18px;
+}
+
+.left-icon {
+    width: 50px;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.fa-caret-down:before {
+    position: absolute;
+    padding: 12px 18px;
+    top: 0;
+    left: 158px;
+    transition: all 0.6s ease;
+}
+
+.fa-east-pointing:before {
+    transform: rotate3d(0, 0, 1, -90deg);
+}
+
+.fa-west-pointing:before {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+
+.fa-north-pointing:before {
+    transform: rotate3d(0, 0, 1, -180deg);
+}
+
+li {
+    list-style-type: none;
+    padding: 8px 0;
+    font-size: 13px;
+    transition: all 0.6s ease;
+    color: #2d353c;
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li:hover {
+    background-color: #E6E9EA;
+    color: #0074a7;
+}
+
+li.active {
+    background-color: #0074a7;
+    color: white;
+}
+
+span,
+.fa {
+    transition: opacity 0.2s ease;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+
+/*For Absolute Positioning*/
+
+span {
+    position: absolute;
+    left: 53px;
+}
+
+.hidden {
+    transition-delay: 0s;
+    opacity: 0;
+}
+
+.anchorColor{
+    color:#222;
+}

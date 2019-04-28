@@ -1,0 +1,12 @@
+<li #item *ngIf="!menuItem.hidden" [class.active]="isActive([menuItem.url])" (mouseenter)="onMouseEnterOverItem($event)" (mouseleave)="onMouseLeaveFromItem($event)" (click)="onClickListItem($event)">
+    <a class="anchorColor" >
+        <i [ngClass]="menuItem.iconClasses" class="left-icon" (click)="onClickItemIcon($event)" aria-hidden="true"></i>
+        <span [@sidebarState]="translateSidebarState(sidebarExpanded)" #listItemSpan (@sidebarState.start)="sidebarAnimationStarted($event)"
+            (@sidebarState.done)="sidebarAnimationEnded($event)">{{menuItem.title}}</span>
+        <i class="fa fa-caret-down" [@sidebarState]="translateSidebarState(sidebarExpanded)" #caretIcon [ngClass]="{'fa-east-pointing': this.collapsibleListState == 'hidden'}"
+            *ngIf="anyChildren(menuItem)" aria-hidden="true"></i>
+    </a>
+</li>
+<ul *ngIf="anyChildren(menuItem)" [@listState]="collapsibleListState">
+    <rc-menu [menuItems]="menuItem.children" (hoverItem)="onHoverItem($event)"></rc-menu>
+</ul>

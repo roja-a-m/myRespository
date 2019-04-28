@@ -1,0 +1,157 @@
+.layout div {
+    background-color: white;
+    border: 1px solid #f5f7f8;
+}
+
+.body-minus-sidebar {
+    margin-left: 50px;
+    transition: 0.6s margin-left ease;
+}
+
+.fa.fa-bars {
+    height: 50px;
+    vertical-align: middle;
+    padding: 18px 18px;
+    color: white;
+    cursor: pointer;
+    float: left;
+}
+
+.fa.fa-bars:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.btn {
+    float: right;
+}
+
+.header {
+    text-align: center;
+}
+.errorMessage {
+    color: red;
+}
+
+.loginMain {
+    background-image: url(/assets/img/winners-circle.jpg);
+    background-repeat: no-repeat;
+    height: 99vh;
+}
+
+.sideDiv {
+    max-width: 38%;
+    margin: 0% 0% 0% 3%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+.form-container > * {
+    width: 100%;
+}
+.loginBtn {
+    flex: 1 1 20%;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    max-width: 20%;
+}
+#loginForm {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    max-height: 100%;
+}
+
+.errorMessage {
+    color: #f44336;
+    padding: 16px 0px 0px 0px;
+}
+/* .logo{
+    font-size: 37px;
+    margin: 9% 0% 0% 3%;
+    color: #007dc3;
+    display: inline-block;
+} */
+.logoo {
+    font-size: 37px;
+    margin: 9% 0% 0% 3%;
+    color: #007dc3;
+    display: inline-block;
+}
+
+.title {
+    font-size: 22px;
+    color: white;
+}
+#headerBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* width: 91vw; */
+    transition: top 0.5s;
+}
+.form_input {
+    height: 50px;
+    width: 350px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 9px #cdcdcd;
+}
+.input {
+    width: 350px;
+    height: 50px;
+    border: none;
+    border: 1px solid #f1f1f1;
+    background: #ffffff;
+    padding-left: 15px;
+    font-weight: 600;
+    outline: none;
+    cursor: text;
+}
+.input::placeholder {
+    opacity: 0.5;
+}
+
+.input_top {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.input_bottom {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: none;
+}
+.login_btn {
+    padding: 22px 194px 0 0;
+}
+
+/* input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+} */
+
+.dropdown{
+    margin-top: 0;
+    float: left;
+    text-align: left;
+    margin-left: 4vh;
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 65%;
+  }
+
+
+  

@@ -1,0 +1,4 @@
+<div class="menu">
+    <rc-menu-item *ngFor="let menuItem of menuItems" [menuItem]="menuItem" (hoverItem)="onHoverItem($event)"></rc-menu-item>
+    <!--<div class="sidebar-hover-elem show-hover-elem" [ngStyle]="sidebarHoverBoundaryStyles"></div>-->
+</div>

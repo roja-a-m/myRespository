@@ -1,0 +1,11 @@
+.sidebar-hover-elem {
+    width: 4px;
+    background: #0074a7;
+    position: fixed;
+    top: -150px;
+    left: 196px;
+    transition: all 0.5s ease;
+    transition-property: top, height;
+    height: 35px;
+    display: block;
+}

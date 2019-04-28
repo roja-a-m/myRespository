@@ -1,0 +1,18 @@
+<div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" #sidebar>
+    <li class="nav-profile">
+        <!--<div class="image" #navProfileImage [@userSectionState]="translateSidebarState(isSidebarExpanded)" (@userSectionState.start)="userSectionAnimationStarted($event)"
+            (@userSectionState.done)="userSectionAnimationEnded($event)">
+            <a href="javascript:;">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="info" #navProfileInfo [@userSectionState]="translateSidebarState(isSidebarExpanded)" (@userSectionState.start)="userSectionAnimationStarted($event)"
+            (@userSectionState.done)="userSectionAnimationEnded($event)">
+            <div>Sean Ngu</div>
+            <small>Front end developer</small>
+        </div>-->
+    </li>
+
+    <rc-menu [menuItems]="menuItems" [collapsible]="collapsible" (hoverItem)="onHoverItem($event)"></rc-menu>
+    <div class="sidebar-hover-elem" [ngStyle]="sidebarHoverBoundaryStyles"></div>
+</div>

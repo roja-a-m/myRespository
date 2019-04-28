@@ -1,0 +1,35 @@
+stages:
+  - frontend
+  - backend
+
+frontendBuild:
+  stage: frontend
+  tags:
+    - dev
+  script:
+    - cd frontend
+    - node -v
+    - whoami
+    - npm install
+    - npm run build --prod
+    - rm -R /var/www/html/marketplace/
+    - cp -f -R dist/ /var/www/html/marketplace/
+    - chmod 777 /var/www/html/marketplace 
+    - cd /var/www/html/marketplace
+    - chmod -R 777 *
+
+backend:
+  stage: backend
+  tags:
+    - dev
+  script:
+    - cd backend
+    - npm install morgan 
+    - forever start server.js
+
+
+    
+    
+    
+    
+

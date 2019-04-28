@@ -1,0 +1,8 @@
+{
+  "secret": "RPT Code Generator",
+  "audience": "nodejs-jwt-auth",
+  "issuer": "https://gonto.com",
+  "enableJWT": false
+
+
+}

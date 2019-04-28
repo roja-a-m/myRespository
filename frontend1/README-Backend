@@ -1,0 +1,12 @@
+To Run Backend:
+
+1. navigate to folder src/main/nodeServer and run following command "npm install".
+2. Run "npm start".
+
+To Disable "JWT Access":
+
+1. navigate to folder src/main/nodeServer/config.json and change the enableJWT to "false".
+
+To change database:
+
+1. navigate to folder src/main/nodeServer/config.json and change the connectionString.
